@@ -1,0 +1,21 @@
+.questions {
+	background: $c-dark;
+	padding: 100px 0;
+
+	&__title {
+		@extend %title;
+	}
+
+	&__desc {
+		line-height: 24px;
+		color: #fff;
+	}
+
+	& input[type="text"] {
+		@extend %inputtext;
+	}
+
+	& input[type=submit] {
+		@extend %inputsubmit;
+	}	
+}

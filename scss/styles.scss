@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+
+  &:hover {
+  	text-decoration: none;
+  }
+
+  &:focus {
+  	text-decoration: none;
+  }
+}
+
+@import "_variables";
+@import "top";
+@import "header";
+@import "benefits";
+@import "gallery";
+@import "info";
+@import "video";
+@import "questions";
+

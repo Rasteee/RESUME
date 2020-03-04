@@ -1,0 +1,56 @@
+.info {
+	font-family: "Raleway", sans-serif;
+	background: url("../img/form.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 25px 0;
+
+	@media (min-width: 768px) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-top: 180px;
+		padding-bottom: 180px;
+	}
+
+	&__title {
+		@extend %title;
+		margin-bottom: 50px;
+	}
+
+	&__desc {
+		line-height: 24px;
+		color: #fff;
+	}
+
+	&__content {
+		padding: 75px 0;
+
+		input[type="text"] {
+			@extend %inputtext;
+		}
+
+		&-text {
+			font-size: 13px;
+			color: #E7E7E7;
+			margin-top: 22px;
+		}
+
+		input[type=submit] {
+			@extend %inputsubmit;
+
+			&:hover {
+				color: #000;
+				background: #fff;
+				opacity: 0.2;
+			}
+
+		}
+
+		&-row2 {
+			margin-top: 35px;
+		}
+	}
+}
